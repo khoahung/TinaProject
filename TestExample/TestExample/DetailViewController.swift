@@ -34,6 +34,7 @@ class DetailViewController: UIViewController , FSCalendarDelegate, FSCalendarDat
         dealine.text = taskDateString
         task_descript.isEditable = false
         category.selectedSegmentIndex = taskCategory
+        category.isEnabled = false
         
         calendar.dataSource = self
         calendar.delegate = self
